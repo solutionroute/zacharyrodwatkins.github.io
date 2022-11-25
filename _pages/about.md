@@ -7,3 +7,4 @@ redirect_from:
   - /about/
   - /about.html
 ---
+Zack Watkins Vancouver based Engineering-Physics Graduate interested in Control Systems and Machine Vision
