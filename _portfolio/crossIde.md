@@ -4,7 +4,7 @@ excerpt: "A way run CrossIDE and flash FPGAs for Linuix"
 collection: portfolio
 ---
 
-# Linux CrossIDE
+Find the source-code [here](https://github.com/zacharyrodwatkins/CrossIDE)
 
 For all y'all suckers trying to do CPEN 312 with a Linux machine, 
 heres and installation of the CrossIDE assembly compiler with 
