@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Zachary Watkins"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Zachary Watkins"
+description              : &description "Zack Watkins is a Vancouver based engineering physics graduate interested in control systems and machine vision"
 url                      : "https://zacharyrodwatkins.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "zacharyrodwatkins/zacharyrodwatkins.github.io"
@@ -95,13 +95,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/zacharyrodwatkins.com"
+  github           : "zacharyrodwatkins"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : 
   lastfm           :
-  linkedin         :
+  linkedin         : 'zack-watkins-21890719b'
   orcid            : 
   pinterest        :
   soundcloud       :
