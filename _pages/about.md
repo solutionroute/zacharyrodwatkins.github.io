@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "Zack Watkins is a Vancouver based Engineering-Physics Graduate interested in Control Systems and Machine Vision"
-excerpt: "About me"
+title: "Zack Watkins"
+excerpt: "I am Vancouver based Engineering-Physics Graduate interested in Control Systems and Machine Vision"
 author_profile: true
 redirect_from: 
   - /about/
