@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* B.A.S.C in Engineering Physics, University of British Columbia 2022
+* B.A.S.C in Engineering Physics, University of British Columbia 2022, with distinction
 
 Experience
 ======
@@ -28,3 +28,15 @@ Experience
 * National Research Council (January - April 2019): Machine Learning for Astronomy Co-op 
   * Designed and trained Neural Networks to predict the metallicity of Stars from photometry. 
   * This novel technique increased the accuracy of correctly predicting low-metallicity stars from 20\% to 60\%.
+
+* Sports Junkies Consignors (2016 - April 2019): Bicycle Mechanic
+  * Served as a senior mechanic in one of Vancouver busiest bike shops
+  * Scheduled and carried-out repairs for hundreds of customers monthly
+
+Technical Skills
+=====
+ * **Programming Languages:** Python, C++, C, Java, JavaScript
+ * **Tools and Frameworks**
+    * Machine Learning: PyTorch, Keras, Tensorflow, Open-CV
+    * DevOps: Git, Jira, Docker
+    * Front End: TKinter, PyQT, React 
