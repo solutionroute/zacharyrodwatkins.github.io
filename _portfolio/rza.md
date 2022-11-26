@@ -1,10 +1,10 @@
 ---
 title: "Robotic Zipping Air Hockey (RZA)"
-excerpt: "RZA is a fully autonomous Air Hockey Opponent <br/><img src='/images/michelle_aigit pus.png'>"
+excerpt: "RZA is a fully autonomous Air Hockey Opponent <br/><img src='/images/michelle_aig.png'>"
 collection: portfolio
 ---
 
-<br/><img src='/images/michelle_aigit pus.png'>
+<br/><img src='/images/michelle_ai.png'>
 
 ## Summary 
 

@@ -1,13 +1,13 @@
 ---
 title: "Engineering Physics Robot Compitition (RZA)"
-excerpt: "3rd Place <br/><img src='/images/0392644_2051523764949376_1583569878147661824_n.jpg'>7"
+excerpt: "3rd Place <br/><img src='/images/70392644_2051523764949376_1583569878147661824_n.jpg'>"
 collection: portfolio
 ---
 
 # Skin, The Bark of Man
 # We are still under some construction, Sorry !
 ## A Solution to the Engineering Physics Robot Competition
-![Skin the Brak of Man ...](70392644_2051523764949376_1583569878147661824_n.jpg)
+![Skin the Brak of Man ...](images/70392644_2051523764949376_1583569878147661824_n.jpg)
 
 
 Hello everyone. Every year the Engineering Physics Department at UBC creates a Summer robotics competition where 15-16 student teams are tasked with creating autonomous robots to preform a series of tasks and complete a mission. This tear's competition was themed after Marvel's Avengers.
