@@ -65,7 +65,7 @@ A couple of things to keep in mind for whoever decides to use a metallic chassis
 
 As for the wheels, we made the wheel out of **(what I don't know )** with the same dimensions of the toy wheel. We also added layers of **I forgot its name** to add to the friction. The reason for changing the wheel was that ,believe it or not , we needed more friction !
 
-![Skin the Brak of Man ...](70869839_545051122969047_2336191664739057664_n.jpg)
+![Skin the Brak of Man ...](images\70869839_545051122969047_2336191664739057664_n.jpg)
 
 We designed our chassis so that it would have a cutout in from of it with sloped walls leading to it. This way, we would need to be in the direction of the post and when we move forward, we will fit into the posts. We have a mechanical switch in the cavity that allows us to know when we have hit the post. This design choice ended up being a life saver.                                                      
 
@@ -83,7 +83,7 @@ We were provided with free stm32 BluePills for the purpose of controlling the ro
 ## Raspberry Pi Camera:
 We use a version 2, 8 MegaPixel Raspberry Pi Camera. The reason we used the version two model was because it had a higher framerate and with our algorithms, we were able to increse the framerate to 50 fps. Since we were planning on finding plushies and ther marks on the field, we needed to have the ability to change the angle of the camera. To this end, we attached the camera on a servo and controlled the servo with the Pi.  
 
-![Skin the Brak of Man ...](70392644_2051523764949376_1583569878147661824_n.jpg)
+![Skin the Brak of Man ...](images\70392644_2051523764949376_1583569878147661824_n.jpg)
 
 Every team was given a budget of 150 dollars and since we decided to use a camera , we needed to use a stronger controller board. Which is why we decided to use a Raspberry Pi in addition to the bluepill boards. Our controller hierarchy look something like this :
 
@@ -154,24 +154,24 @@ Here are a list of the electrical components:
 This circuit is our main drive controller board. The circuit simply takes ina PWM signal from the BluPill and send it to the motors. One component of the circuit includes an OptoIsolator which disconnects the ground of the mtotr from the geound of the circuit. This is because the motor creates a lot of noise on its channel and a could damage the BluePill. Therefore, it is imperative to seperate the two from each other. **More Explanation requierd here**. This circuit is powered with a 16 Volt lipo battery.
 
 
-![Skin the Brak of Man ...](70817571_901591420211422_8514916339565985792_n.jpg)
+![Skin the Brak of Man ...](images\70817571_901591420211422_8514916339565985792_n.jpg)
 
 
 - **OptoIsolator Circuit**:
 The concept of this circuit is simple. We use this circuit to both power the servos and sends the pwm signals. One major reason behind using this circuit is because we decided to use the same 16 Volt lipo battery with a regulated voltage. Since that battery grounds with the Barber Colman motor, we needed to make sure the ground of the motor doesn't connect with the BluePills. Therefore we have 6 optoisolators. 3 for the arm and two for the dispensing tubes.
 
-![Skin the Brak of Man ...](70422108_2471018806507541_7287727707880685568_n.jpg)
+![Skin the Brak of Man ...](images\70422108_2471018806507541_7287727707880685568_n.jpg)
 
 - **BluePill circuits**:
 This is a simple circuit which powers the two BluePills and has a regulator to bring down the voltage for 5 volts. This circuit is powered by a 8v lipo.
 
-![Skin the Brak of Man ...](71049407_380775019508606_944748313830227968_n.jpg)
+![Skin the Brak of Man ...](images\71049407_380775019508606_944748313830227968_n.jpg)
 
 - **Additional Components** :
 The only other components are a debounced wsitch which is used to detect when we are at the post and the Raspberry Pi. The Pi and is conneted to the camera servo, switch and the two BluPills. The Pi itself is powered by another 8 volt lipo. There is a power switch connected to the 8 volt lipo for the Pi which regulates the voltage to 5 volts.
 
 ### The overall connection
-![Skin the Brak of Man ...](70960511_465331177659830_429396592437493760_n.jpg)
+![Skin the Brak of Man ...](images\70960511_465331177659830_429396592437493760_n.jpg)
 # Our Mistakes
 
 # The Competition outcome
