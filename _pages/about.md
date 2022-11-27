@@ -9,10 +9,10 @@ redirect_from:
 ---
 I am Vancouver based Engineering-Physics Graduate interested in Control Systems and Machine Vision. Other intrests include racing mountain bikes, backcountry skiing, and playing poor guitar covers of 90s alt-rock songs.
 
-Lately I've been working on Machine lea
+Lately I've been working on machine learning for GIS applications.
 
 <br/><img src='/images/skiing2.jpeg'>
 
-Checkout some of my favourite [projects](/portfolio) I've worked on, take a gander at my [resume](/cv), and stay a while.
+Checkout some of my favourite [projects](/portfolio). You can fine my resume [here](/cv), and stay a while.
 
 
