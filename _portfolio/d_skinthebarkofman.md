@@ -9,29 +9,11 @@ collection: portfolio
 ## A Solution to the Engineering Physics Robot Competition
 ![Skin the Brak of Man ...](images/70392644_2051523764949376_1583569878147661824_n.jpg)
 
+Every year the Engineering Physics Department at UBC hosts Summer robotics competition where 15-16 student teams are tasked with creating autonomous robots to preform a series of tasks. 
+This year's competition featured two robots positioned at the starting points on opposite sides of the table.
 
-Hello everyone. Every year the Engineering Physics Department at UBC creates a Summer robotics competition where 15-16 student teams are tasked with creating autonomous robots to preform a series of tasks and complete a mission. This tear's competition was themed after Marvel's Avengers.
+Both robots have the same objective: each has to follow a line up the ramp, after which point thier goal is to retreive the stones from the towers. Simply follow the black tape, locate the posts and retrive the stones from their perch. Easy. 
 
-Thanos has reached his evil goal of making half of the universe’s population disappear, brutally saving civilization from self-destruction by overpopulation. But in another parallel universe, his good twin brother Meta-Thanos known as Methanos has built an army of robots to counter his evil sibling’s intentions. Methanos is now sending these robots back in time to each one of the parallel universes to secure the Infinity Stones and rescue the Avengers. Meanwhile Thanos is deploying his own robot army to destroy the Avengers and gather the Infinity Stones in all universes.
-
-These gods have engaged you, Engineering Physics students, to build them robots to go back in time to perform this purpose. As Thanos and Methanos look the same, you’re not really sure what side you’re on so you’d better make your robot able to function for both. As observers of just one of these universes, you will watch with delight or horror as your robots take part in the ultimate struggle between good and evil, between robots with flawless mechanical precision and those of questionable rigidity.
-
-## Image of the competition surface
-
-Two robots are positioned at the starting points and turned on. for hte purpose of the competition, one is called Thanos nad the other is called Methanos. However these two robots have the same objectives. Each robot has to follow a line up the ramp. From there , each robot has two different types of objectives :
-1. Retreat the Infinity Stones: Follow the black tapes to find intersections. From there, the robots must head to the post and pick up the infinity stone. The posts have the same circular base size with different heights. With this mission, the robot continues to follow the line back the its targetted gauntlet. There are six small and shallow holes on the gauntlet where the robot must drop the infinity stones. Robots could either drop the stones one at a time or they can pickup multiple stones and drop them at the same time at the end of the run. There are a total of 6 Infinity Stones and each one counts for 2 points if it is dropped in the gauntlet.
-## image of infinity stone
-## image of the posts
-## image of the gauntlet (maybe that machine vision version )
-
-2. Save the Avengers: There are a number pluchies randomly placed around the track. The mission with the plushies is to detect them and to guide them toward the plushy droping zone. There are two dropping points , one for Methanos and one for Thanos. But how does each robot know where to drop them ? Well each of these dropping zones has a Infra Red beacon used to create two different frequencies. Depending on the role , the robot must choose which IR beacon it must follow adn must drop the plshies there. Every plushy successfully dropped the has 1 point only and there are a total of 5 different plushies. 
-## image of plshies
-## image of the IR beacon 
-
-The important note to keep in mind is that every round of the competition is only **2 minutes long** . In addition, all of these robots must have some method of handling collisions because **for every restart, the team will have a -2 deduction from their overall score** . **Assisting the robot, like giving it a nudge or pushing the arm if it is stuck is allowd but will reduce any score from there on to 1/17 of the score**. It is important to keep in mind that the strategy here is imperative for this competition.
-
-## Our Strategy
-Our initial strategy , after some time of working out possible solutions and testing them out (A list of these ideas like position tracking with a laser mouse, having a complicated 3-axis claw, using buke chains ) we decided to go with the strategy of picking up two stones from the shortest middle posts, going back to the gauntlet and dropping them off and then possibly going for plushies. As we though about going for plushies, we decided to use a camera and a Raspberry Pi to detect and go after the plushies. Since we decided to use a camera, we had the bold and dangerous idea of using the Pi Camera for the line following task as well. This decision led to a take a very different route for our robot design since the traditional method for line following is to use QRD sensors. 
 
 <a href="https://imgflip.com/gif/3awpf2"><img src="https://i.imgflip.com/3awpf2.gif" title="made at imgflip.com"/></a>
 
