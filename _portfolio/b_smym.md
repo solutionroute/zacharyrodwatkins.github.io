@@ -25,8 +25,64 @@ Finally, to input commands we need to set up a fifo pipe. Instructions can be fo
 
 ### Using the API
 
-There are two parts to the API: Command_Publisher and Memory_Watcher
+There are two parts to the API: Command_Publisher and MemoryWatcher
 
 #### Command_Publisher
 
-Comman
+This is simply a python wrapper around making system calls echoing to the fifo pipe. It provides functionality like simulating moving joysticks, presssing buttons, etc...
+
+As an example, the below code snipping sets the joystick position, and pressed the 'B' button.
+'''
+import Command_Publisher
+
+Move_Stick('0.5','0.5')
+Press_Button('B')
+''' 
+
+#### MemoryWatcher 
+
+Now this is really the core of this project. Once you know the adress and the data-type of an in game variable, MemoryWatcher lets you read that variable into your python script.
+
+For instance, say you knew that the x-position of your character was represented as a float, and held at adress 0x80453090. You could then retrive that information in your python script as follows:
+
+'''
+p1x_add = 0x80453090
+
+p1=MemoryWatcher(p1x_add,'f')
+
+while(p1.getStatus()=='hooked'):
+
+    p1x = float(p1.getMemory())
+    print(p1x)
+'''
+
+With these two modules, the hope is that you could get as creative as you want. At the absolute simplest, check out the following script.
+
+'''
+#!/usr/bin/python3
+from Command_Publisher import *
+import sys
+sys.path.insert(0, 'src/Our-Dolphin/Source/build')
+from DolphinMemoryEngine import MemoryWatcher
+
+p1x_add = 0x80453090
+p2x_add = 0x80453F20
+
+p1=MemoryWatcher(p1x_add,'f')
+p2=MemoryWatcher(p2x_add, 'f')
+
+while(p1.getStatus()=='hooked'):
+
+    p1x = float(p1.getMemory())
+    p2x = float(p2.getMemory())
+ 
+    if abs(p1x-p2x)<10:
+        Move_Stick('0.5','0.5')
+        Press_Button('B') # attack!
+
+    else:
+        x_stick = 1 if p2x<p1x else 0
+        x_stick = str(x_stick) 
+        Move_Stick(x_stick, str(0.5)) # move towards the opponent
+
+'''
