@@ -16,5 +16,5 @@ The RZA allows students test and compare their respective agents on a real physi
 
 With a rudimentary high level decision making system, the RZA can play a human in air hockey. It can comfortably defend its net, and can score the occasional goal. 
 
-You can download a detailed account of this project [here](http://zacharyrodwatkins.github.io/files/RZA.pdf)
+You can download a detailed account of this project [here](https://zacharyrodwatkins.github.io/files/RZA.pdf)
 Relavent source-code is available [here](https://github.com/zacharyrodwatkins/PucksInDeep)
