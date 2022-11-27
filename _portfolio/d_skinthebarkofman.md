@@ -1,13 +1,10 @@
 ---
-title: "Engineering Physics Robot Compitition (RZA)"
-excerpt: "3rd Place <br/><img src='/images/70392644_2051523764949376_1583569878147661824_n.jpg'>"
+title: "Engineering Physics Robot Compitition"
+excerpt: "<br/><img src='/images/70392644_2051523764949376_1583569878147661824_n.jpg'>"
 collection: portfolio
 ---
 
-# Skin, The Bark of Man
-# We are still under some construction, Sorry !
-## A Solution to the Engineering Physics Robot Competition
-![Skin the Brak of Man ...](images/70392644_2051523764949376_1583569878147661824_n.jpg)
+![Skin the Bark of Man ...](images/70392644_2051523764949376_1583569878147661824_n.jpg)
 
 Every year the Engineering Physics Department at UBC hosts Summer robotics competition where 15-16 student teams are tasked with creating autonomous robots to preform a series of tasks. 
 This year's competition featured two robots positioned at the starting points on opposite sides of the table.
@@ -17,26 +14,7 @@ Both robots have the same objective: each has to follow a line up the ramp, afte
 
 <a href="https://imgflip.com/gif/3awpf2"><img src="https://i.imgflip.com/3awpf2.gif" title="made at imgflip.com"/></a>
 
-## Image of QRD sensors
-
-Our general strategy ended up being one that depends on the reliabiility and accuracy of hte robot in addition to relying on the speed. We needed speed since our robot was going into the opponent's territory. Since any collision is difficult to deal with in the middle of the competition, we decided to be wuick so that our robot would be able to return the stones to the gauntlet in less than a minute. From there on , we would decide to run again and restart or to go for the plushies. This way would have a guaranteed 4 points and this would give us an advantage in the competition. In addition to this, we decided to focus on some mechanical design in order to simplify the controll of the robot. for example a half circle in the front of the robot for parcking it accuratly in front of the posts. **So, enought strategy talk ...** 
-
-And so it began, our jurny towards the creation of **Skin, Bark of Man**. Why call it that ? Well because obviosuly **Skin is the Bark of Man**.
-
-## Chassis and  Body Design
-Well, first we needed to try out our idea of how the robot would look adn work. In addition, some of us working on software needed a prototype to tesk their code on.
-
-## Image of our first design
-
-Well, not much to work on. It was a very quick prototype created with a aluminum base ccreated with a waterjet cutter. We put slots in the middle so that we could position the components at different points on the chassis.
-We decided to use large and while wheel in order to increase the grip and the speed of movement. So for this prototype, we used a toy car wheel since in addition to having grip, it has a natural suspension effect for the control of the robot. Our robot had two caster wheel in the front as well.
-We put a webcam at the front of the robot and we used it for line following . the early versions of the code are in the github history. After about three days of testing we got it to work, kind of ...
-## Image of the robot saladding
-
-After this we move to our other chassis version 2
-
-## Image of the 3D model of the robot 
-## Image of the 1 d base
+### Chassis design
 
 This chassis was designed to be sturdy. This chassis is one piece. That's right. One piece of aluminum was cut out using the waterjet cutter with holes and edge. Then this body was properly bent and different sides wereconnected to each other with fasteners, and nuts and bolts.While this is more difficult to build and connet , the benefit is the irgidity of the robot.Most teams chose to make their chassis out of hardboard with lase jet cutters. During  the testing process and the competition, robot often fell out of the platform and collided with objects and other robots. The benefit of our metallic chassis was that the collisions and the dropping didn't damage our robot significantly and this proved to be very helpfull during the competition.
 
@@ -68,8 +46,6 @@ We use a version 2, 8 MegaPixel Raspberry Pi Camera. The reason we used the vers
 ![Skin the Brak of Man ...](images\70392644_2051523764949376_1583569878147661824_n.jpg)
 
 Every team was given a budget of 150 dollars and since we decided to use a camera , we needed to use a stronger controller board. Which is why we decided to use a Raspberry Pi in addition to the bluepill boards. Our controller hierarchy look something like this :
-
-## image of the controller heirarchy
 
 This way, the Raspberry Pi acts as the main controller. However, the raspberry pi did not have enough pwm pins and we preferred to control our servos and motors with the BluePills. The Pi processes the information from the camera frames and then sends commands to the motor controller BluePill through UART communication. The communication between these two boards is imperative since the raspberry pi constantly check which pwm signals is needed to follow the black tape. The other BluePill is only used to move the robot arm for picking up the Infinity Stones. Therefore the communication between the Pi and the arm BluePill is through two pins. The high and low states of those two pins are used to indicate the state of the arm (open, close, dron in dispensing). In addition to the arm, this second BluePill controlls the dispensing servos as well. 
 
@@ -152,9 +128,4 @@ This is a simple circuit which powers the two BluePills and has a regulator to b
 - **Additional Components** :
 The only other components are a debounced wsitch which is used to detect when we are at the post and the Raspberry Pi. The Pi and is conneted to the camera servo, switch and the two BluPills. The Pi itself is powered by another 8 volt lipo. There is a power switch connected to the 8 volt lipo for the Pi which regulates the voltage to 5 volts.
 
-### The overall connection
 ![Skin the Brak of Man ...](images\70960511_465331177659830_429396592437493760_n.jpg)
-# Our Mistakes
-
-# The Competition outcome
-We cam in Forth 
