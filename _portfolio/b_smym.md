@@ -8,8 +8,6 @@ collection: portfolio
 
 Show me Your Moves is a Python API for creating custom Super Smash Bros. AIs. 
 We run Super Smash Bros. Melee in an emulated environment and read memory address directly from RAM. With the backend written in C++, we provide a Python API for reading various in-game parameters (e.g. health, player location, etc...), as well as inputting commands (e.g. jump, move, attack, etc...)
- 
-Checkout the source-code [here](https://github.com/zacharyrodwatkins/ShowMeYourMoves)
 
 ## Setup 
 
@@ -32,12 +30,11 @@ There are two parts to the API: Command_Publisher and MemoryWatcher
 This is simply a python wrapper around making system calls echoing to the fifo pipe. It provides functionality like simulating moving joysticks, presssing buttons, etc...
 
 As an example, the below code snipping sets the joystick position, and pressed the 'B' button.
-'''
+~~~
 import Command_Publisher
-
 Move_Stick('0.5','0.5')
 Press_Button('B')
-''' 
+~~~
 
 #### MemoryWatcher 
 
@@ -45,7 +42,7 @@ Now this is really the core of this project. Once you know the adress and the da
 
 For instance, say you knew that the x-position of your character was represented as a float, and held at adress 0x80453090. You could then retrive that information in your python script as follows:
 
-'''
+~~~
 p1x_add = 0x80453090
 
 p1=MemoryWatcher(p1x_add,'f')
@@ -54,11 +51,11 @@ while(p1.getStatus()=='hooked'):
 
     p1x = float(p1.getMemory())
     print(p1x)
-'''
+~~~ 
 
 With these two modules, the hope is that you could get as creative as you want. At the absolute simplest, check out the following script.
 
-'''
+~~~ 
 #!/usr/bin/python3
 from Command_Publisher import *
 import sys
@@ -84,5 +81,5 @@ while(p1.getStatus()=='hooked'):
         x_stick = 1 if p2x<p1x else 0
         x_stick = str(x_stick) 
         Move_Stick(x_stick, str(0.5)) # move towards the opponent
-
-'''
+~~~
+All that script does is move in the direction of the opponent, and attack if you're close enough. But you can do better than that! Get after it!.
