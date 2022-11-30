@@ -17,7 +17,7 @@ Experience
 ======
 * Express Remote Sensing (September 2020 - December 2022): Computer Vision Engineer 
   * Used various Machine Learning and Signal Processing techniques to delineate roads, buildings, rivers and railroads in LIDAR and aerial photography.
-  * Improved efficiency by creating intuitive graphical user interfaces (GUIs) that allow processors to interact with my automation tools easily.  
+  * Improved efficiency by creating intuitive graphical user interfaces (GUIs) that allow processors to interact easily with my automation tools.  
   * Reduced time employees spent sorting through data by developing models that rank images by relevance. 
 
 * Sierra Wireless (May - September 2020): Software Developer Co-op
