@@ -23,6 +23,7 @@ Relavent source-code is available [here](https://github.com/zacharyrodwatkins/Pu
 Just to highlight one of my personal favourite parts of this project, here's an excerpt from the above paper regarding the work I did to model the physics of out robot
 
 
+<br/><img src='/images/rza.gif'>
 
 ## Modeling the Electrodynamics of the Gantry
 
