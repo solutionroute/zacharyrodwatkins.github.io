@@ -13,6 +13,6 @@ Lately I've been working on machine learning for GIS applications.
 
 <br/><img src='/images/skiing2.jpeg'>
 
-Checkout some of my favourite [projects](/portfolio); my resume is [here](/cv).
+Checkout some of my favourite [projects](/portfolio); my CV is [here](/cv).
 
 
