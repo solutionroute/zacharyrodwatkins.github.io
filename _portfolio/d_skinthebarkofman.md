@@ -16,18 +16,11 @@ Both robots have the same objective: each has to follow a line up the ramp, afte
 
 ### Chassis design
 
-This chassis was designed to be sturdy. This chassis is one piece. That's right. One piece of aluminum was cut out using the waterjet cutter with holes and edge. Then this body was properly bent and different sides wereconnected to each other with fasteners, and nuts and bolts.While this is more difficult to build and connet , the benefit is the irgidity of the robot.Most teams chose to make their chassis out of hardboard with lase jet cutters. During  the testing process and the competition, robot often fell out of the platform and collided with objects and other robots. The benefit of our metallic chassis was that the collisions and the dropping didn't damage our robot significantly and this proved to be very helpfull during the competition.
-
-A couple of things to keep in mind for whoever decides to use a metallic chassis:
-1. Make sure that you electrical circuits do not touch the body. **Shorting circuits is BAD. like VERY BAD .**
-2. Try to make the chassis in a way that the circuits and interior of the robot could be change easily.
-3. Im not sure about this one -- If you are planning to use a robot that has two or three level and is tall, having the robot with too many nuts and bolts connection and too rigid would sometime reduce the control over the robot. 
-
-As for the wheels, we made the wheel out of **(what I don't know )** with the same dimensions of the toy wheel. We also added layers of **I forgot its name** to add to the friction. The reason for changing the wheel was that ,believe it or not , we needed more friction !
+The chassis is one piece of water-jet cut aluminum was, bent and bolted together. While accessing the inner electronics was a bit of a pain, this otherwise made for a light-weight and durable robot. 
 
 ![Skin the Brak of Man ...](images\70869839_545051122969047_2336191664739057664_n.jpg)
 
-We designed our chassis so that it would have a cutout in from of it with sloped walls leading to it. This way, we would need to be in the direction of the post and when we move forward, we will fit into the posts. We have a mechanical switch in the cavity that allows us to know when we have hit the post. This design choice ended up being a life saver.                                                      
+At the front of the chassis there is a semi-circular cutout with sloped walls leading to it. The idea here was that we could easly align ourselve with the posts, by simply driving in to them. We have a mechanical switch in the cavity that allows us to know when we have hit the post. This design choice proved a life saver - many other teams struggled to locate the stone, whereas the stone were always right where we expected/                                                     
 
 
 # Micro controllers
@@ -62,7 +55,6 @@ The code for both of out BluePills were mostly simple. The codes and comments ar
 7. based on the position of the line edges, we find the position of the robot with respect to the center of the blakc line.
 8. From there on we have a PID controller just like any other line following robot.
 
-**We used a couple of libraries from OpenCV**
 
 ## Image of what we see from the black lines (take it offf online if we don't have one )
 
